@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<title>LaPS - Laboratory of Signal Processing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Links para os códigos CSS -------------------------------------------------------------------------- -->
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Classes .css W3schools -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> <!-- Importação de Fonte -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!-- Importação de Fonte -->
+<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet"> <!-- Importação de Fonte -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Importação de Fonte -->
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- CSS complementar ----------------------------------------------------------------------------------- -->
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Rajdhani", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+a {text-decoration: none}
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .collapsible:hover {
+    background-color: #555;
+}
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+</style>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<body>
+<!-- Barra de Navegação --------------------------------------------------------------------------------- -->
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-dark-gray w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-dark-gray">Home</a>
+    <a href="#linhas_pesquisa_a" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Research Lines</a>
+    <a href="#projetos_a" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
+    <a href="#publicacoes_a" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Publications</a>
+	<a href="#integrantes_a" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Members</a>
+	<a href="#contato_a" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+  </div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Barra de Navegação para telas menores -------------------------------------------------------------- -->
+
+  <div id="navDemo" class="w3-bar-block w3-dark-gray w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#linhas_pesquisa_a" class="w3-bar-item w3-button w3-padding-large">Research Lines</a>
+    <a href="#projetos_a" class="w3-bar-item w3-button w3-padding-large">Projects</a>
+    <a href="#publicacoes_a" class="w3-bar-item w3-button w3-padding-large">Publications</a>
+	<a href="#integrantes_a" class="w3-bar-item w3-button w3-padding-large">Members</a>
+	<a href="#contato_a" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
+</div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Cabeçalho ------------------------------------------------------------------------------------------ -->
+
+<header class="w3-container w3-center" style="padding:128px 0px 16px 16px">
+ <div id="idioma" class="w3-right-align w3-margin-right" style="padding-bottom:40px"><span class="w3-padding-small w3-round"><a href="index.html">Português</a></span> <span class="w3-padding-small w3-round w3-gray">English</span> </div>
+<img class="w3-image" src="laps_logo.jpg" width="400px">
+  <h1 class="w3-margin-bottom"><b>Laboratory of Signal Processing</b></h1>
+</header>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Sobre o LaPS - Descrição do Laboratório ------------------------------------------------------------ -->
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+      <h2><b>About LaPS</b></h2>
+      <h5 class="w3-padding-large w3-justify">
+<p>
+Laboratory of Signal Processing (LaPS) is associated to Faculty of Computer Engineering and Telecommunications (FCT) and Faculty of Electrical and Biomedical Engineering (FEEB) of the Institute of Technology (ITEC) of Federal University of Pará (UFPA). It's an academic environment formed by professors and students of the University with interest in developing projects with technologies that benefit the students and the community. The students put into practice knowledge taught in the classroom and develop their research. The technology developed in LaPS is destined to the community, aiming to improve their quality of health, culture, etc.</p>
+
+<p>LaPS aims to carry out undergraduate and graduate teaching and research activities and develop projects and provide services in areas related to computer vision and general signal processing. In addition, LaPS seeks to become a laboratory of excellence in the area of ​​Signal Processing, supporting government agencies and private companies with state-of-the-art technology and qualified professionals.</p>
+
+<p>The Laboratory mainly serves students of the undergraduate courses in Computer Engineering, Electrical Engineering, Telecommunications Engineering and Biomedical Engineering.</p>
+</h5>
+    <div class="w3-center">
+      <img class="w3-image w3-padding-64" src="laps_home.jpg">
+    </div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Parceiros ------------------------------------------------------------------------------------------ -->
+
+<div class="w3-container w3-center w3-card w3-white">
+    <h3 class="w3-margin"><b>Partners</b></h3>
+	<img class="w3-image w3-margin" src="icon_cnpq.jpg" width="150px">
+	<img class="w3-image w3-margin" src="icon_capes.jpg" width="150px">
+	<img class="w3-image w3-margin" src="icon_senai.jpg" width="150px">
+</div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+  </div>
+</div>
+<!-- Linhas de Pesquisa --------------------------------------------------------------------------------- -->
+
+<div id="linhas_pesquisa_a"></div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="">
+      <h2><b>Research Lines</b></h2>
+      <h5 class="w3-padding-large w3-justify">
+<p>LaPS carries out research in several areas of signal processing, with a recent emphasis on the following areas:</p>
+
+<p><b>Visual Quality Evaluation: </b>development and performance analysis of visual quality metrics applied to digital image and video; development and use of methodologies to obtain subjective data of visual quality, evaluation of visual quality in medical images.</p>
+
+<p><b>Image analysis: </b>techniques for automatic image analysis and component inspection.</p>
+
+<p><b>Eye-tracking systems: </b>eye tracking data capture, investigation of strategies to evaluate / improve the performance of eye-tracking systems, use of visual attention models to reduce calibration step, detection and tracking strategies of pupil and techniques of head position estimation.</p>
+</h5>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Projetos ------------------------------------------------------------------------------------------- -->
+
+<div id="projetos_a"></div>
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+	<div class="w3-content">
+		<div class="">
+			<h2><b>Projects</b></h2>
+			<h5 class="w3-padding-large w3-justify">
+			<ul>
+				<h3><b>2017</b></h3>
+					<h4><b>Solutions in "Industry 4.0" applied to Mining</b></h4>
+						<li><b>Period:</b> june/2017 - currently</li>
+						<li><b>Coordinator:</b> Cleidson Ronald Botelho de Souza (ITV-DS)</li>
+						<li><b>Partners:</b>Vale Technological Institute, SENAI Innovation Institute</li>
+						<li><b>Financier:</b> ITV-DS, SENAI-PA, CNPq</li>
+					<h4><b>Use of visual attention models to improve the performance of eye / gaze-tracking systems: applications in assistive technology and crowdsourcing</b></h4>
+						<li><b>Period:</b> august/2017 - currently</li>
+						<li><b>Coordinator:</b> Ronaldo de Freitas Zampolo</li>
+						<li><b>Partners:</b> Polytech Nantes</li>
+						<li><b>Financier:</b> UFPA</li>
+				<h3><b>2015</b></h3>
+					<h4><b>Satellite analysis systems for monitoring deforestation and human occupation in areas of mineral exploration</b></h4>
+						<li><b>Period:</b> january/2012 - december/2015</li>
+						<li><b>Coordinator:</b> Evaldo Gonçalves Pelaes</li>
+						<li><b>Financier:</b> Foundation for Research Support in the State of Pará (FAPESPA)</li>
+					<h4><b>Development of an on-line monitoring and diagnosis system of partial discharges in the stator winding of hydro generators</b></h4>
+						<li><b>Period:</b> june/2012 - june/2015</li>
+						<li><b>Coordinator:</b> Victor Dimitriev</li>
+						<li><b>Partners:</b> Eletronorte</li>
+						<li><b>Financier:</b> Eletronorte</li>
+				<h3><b>2012</b></h3>
+					<h4><b>Implementation of a Laboratory of Low-Cost March Analysis for Aid in Rehabilitation of Children with Non-Evolutionary Encephalopathy</b></h4>
+						<li><b>Period:</b> august/2008 - march/2012</li>
+						<li><b>Coordinator:</b> Ronaldo de Freitas Zampolo</li>
+						<li><b>Partners:</b> Institute Poor Servants of Divine Providence (IPSDP)</li>
+						<li><b>Financier:</b> Foundation for Research Support in the State of Pará (FAPESPA)</li>
+				<h3><b>2008</b></h3>
+					<h4><b>Advanced Techniques for DSL Link Qualification</b></h4>
+						<li><b>Period:</b> november/2006 - october/2008</li>
+						<li><b>Coordinator:</b> João Crisóstomo Weyl Albuquerque Costa</li>
+						<li><b>Financier:</b> Ericsson</li>
+				<h3><b>2006</b></h3>
+					<h4><b>Model Development for Dynamic Spectrum Management in Subscriber Digital Line Services</b></h4>
+						<li><b>Period:</b>  november/2004 - october/2006</li>
+						<li><b>Coordinator:</b> Aldebaro Barreto da Rocha Klautau Junior</li>
+						<li><b>Financier:</b> Ericsson</li>
+			</ul>
+			</h5>
+		</div>
+	</div>
+</div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Publicações ---------------------------------------------------------------------------------------- -->
+
+<div id="publicacoes_a"></div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="">
+      <h2><b>List of Publications</b></h2>
+      <h5 class="w3-padding-large w3-justify">
+
+<ul>
+
+<h3><b>2017</b></h3>
+<li>L. Gonçalves, R. F. Zampolo, L. M. Brito, V. G. Macedo, F. A. S. Rocha. System and protocol for collecting subjective data on clinical 
+quality of compressed DICOM images.</li>
+<li>M. M. C. Cruz, R. F. Zampolo, M. P. Silva, P. Le Callet. An experimental setup and protocol for offline performance assessment of eye/gaze 
+tracking strategies. In: 30th Conference on Graphics, Patterns and Images (SIBGRAPI'17), 2017, Niterói (RJ). Electronic Proceedings of the 30th 
+Conference on Graphics, Patterns and Images (SIBGRAPI'17), 2017. </li>
+<li>R. M. S. Oliveira, R. C. F. Araújo, F. J. B. Barros, A. P. Segundo, R. F. Zampolo, W. Fonseca, V. Dimitriev, F. S. Brasil. A system based on 
+artificial neural networks for automatic classification of hydro-generator stator windings partial discharges. In: Journal of Microwaves, 
+Optoelectronics and Electromagnetic Applications, vol. 16, n. 3, September, 2017.</li>
+<h3><b>2016</b></h3>
+<li>L. Gonçalves, R. F. Zampolo, V. G. Macedo. Aplicativo para caracterização de desempenho de métricas de qualidade visual. In: XXXIV 
+Simpósio Brasileiro de Telecomunicações, 2016, Santarém (PA). Anais do XXXIV Simpósio Brasileiro de Telecomunicações, 2016. </li>
+<li>C. L. A. Gonçalves, R. F. Zampolo. Classificador SLFN-ELM aplicado à verificação de adulteração de imagens baseada em padrão CFA. 
+In: XXXIV Simpósio Brasileiro de Telecomunicações, 2016, Santarém (PA). Anais do XXXIV Simpósio Brasileiro de Telecomunicações, 2016. </li>
+<li>A. T. A. Gusmão, A. L. S. Castro, R. F. Zampolo. Fechadura Baseada em Reconhecimento Facial Via Dispositivos Móveis Android. In: 
+XXXIV Simpósio Brasileiro de Telecomunicações, 2016, Santarém (PA). Anais do XXXIV Simpósio Brasileiro de Telecomunicações, 2016. </li>
+
+<h3><b>2015</b></h3>
+
+<li>V. Dimitriev, R. M. S. Oliveira, F. S. Brasil, P. R. M. Vilhena, J. F. M. Modesto, R. F. Zampolo. Analysis and comparison of sensors 
+for measurements of partial discharges in hydrogenerator stator windings. In: Journal of Microwaves, Optoelectronics and Electromagnetic 
+Applications, vol. 14, n. 2, December, 2015. </li>
+<li>R. F. Zampolo, A. J. C. Sena, P. R. M. Vilhena, F. S. Brasil, V. Dimitriev, R. M. S. Oliveira. Estratégia para seleção de sub-bandas 
+wavelet em sistemas de monitoramento de descargas parciais. In: XVI ERIAC Encuentro Regional Iberoamericano de CIGRÉ, 2015, 
+Puerto Iguazu (Argentina). Anais do XVI ERIAC, 2015. </li>
+<li>P. R. M. Vilhena, R. F. Zampolo, A. J. C. Sena, F. S. Brasil, V. Dimitriev, R. M. S. Oliveira. Simulador virtual de sinais de descargas 
+parciais. In: XVI ERIAC Encuentro Regional Iberoamericano de CIGRÉ, 2015, Puerto Iguazu (Argentina). Anais do XVI ERIAC, 2015. </li>
+<h3><b>2013</b></h3>
+<li>H. B. Costa, R. F. Zampolo, E. P. Santos, D. M. Carmo, A. R. Castro. Camera identification based on sensor noise pattern: 
+a practical procedure for open scenarioss. In: XXXI Simpósio Brasileiro de Telecomunicações, 2013, Fortaleza (CE). 
+Anais do XXXI Simpósio Brasileiro de Telecomunicações, 2013. </li>
+<h3><b>2012</b></h3>
+<li>H. B. Costa, R. F. Zampolo, D. M. Carmo, A. R. Castro, E. P. Santos. On the practical aspects of applying the PRNU approach 
+to device identification tasks. In: Conferência Internacional de Ciências Forenses em Multimídia e Segurança Eletrônica 2012, 
+2012, Brasília (DF). Anais da Conferência Internacional de Ciências Forenses em Multimídia e Segurança Eletrônica 2012, 2012. </li>
+<li>R. F. Zampolo, C. L. Ferreira, L. F. A. Soares. Relato de experiências: disciplina de Arquitetura e Organização de Computadores do curso de 
+Engenharia da Computação. In: XL Congresso Brasileiro de Educação em Engenharia, 2012, Belém (PA). Anais do XL Congresso Brasileiro 
+de Educação em Engenharia, 2012. </li>
+<h3><b>2011</b></h3>
+<li>R. F. Zampolo, D. M. Carmo, H. B. Costa, E. P. Santos, A. R. Castro. Projeto de extensão universitária em processamento de 
+imagem na área forense: relato de uma experiência em andamento. In: XXXIX Congresso Brasileiro de Educação em Engenharia, 
+2011, Blumenau (SC). Anais do XXXIX Congresso Brasileiro de Educação em Engenharia, 2011. </li>
+<li>D. M. Carmo, H. B. Costa, R. F. Zampolo, E. P. Santos, A. R. Castro. Avaliação de desempenho de técnica para identificação de dispositivo 
+de aquisição baseada em PRNU com diferentes tipos de imagem de teste. In: XXIX Simpósio Brasileiro de Telecomunicações, 2011, Curitiba (PR). 
+Anais do XXIX Simpósio Brasileiro de Telecomunicações, 2011. </li>
+<h3><b>2009</b></h3>
+<li>R. F. Zampolo, D. A. Gomes, R. Seara. Characterization of Difference Detection Thresholds in AWGN-Degraded Images by Using Full Reference Metrics. 
+In: IEEE 16th International Conference on Image Processing ICIP 2009, 2009, Cairo. Proceedings of IEEE 16th International 
+Conference on Image Processing ICIP 2009, 2009. p. 1785-1788. </li>
+<li>R. F. Zampolo, R. Seara. Sobre Adequação da Similaridade Estrutural Média em Codificadores Baseados em DCT. In: XXVII Simpósio Brasileiro 
+de Telecomunicações, 2009, Blumenau (SC). Anais do XXVII Simpósio Brasileiro de Telecomunicações, 2009. </li>
+<li>R. F. Zampolo, D. A. Gomes, R. Seara. Análise de Métricas de Qualidade Visual Aplicadas na Caracterização de Limiares Perceptuais com 
+Variação da Imagem de Referência. In: XXVII Simpósio Brasileiro de Telecomunicações, 2009, Blumenau (SC). Anais do XXVII Simpósio 
+Brasileiro de Telecomunicações, 2009. </li>
+<h3><b>2008</b></h3>
+<li>R. B. Moraes, B. Dortschy, A. B. R. Klautau Junior, R. F. Zampolo, J. R. I. Riu. Optimal Solution for the Fixed Margin Problem 
+in Digital Subscriber Lines. In: IEEE International Symposium on Communications, Control and Signal Processing (ISCCSP), 2008, 
+St. Julians, Malta. 3rd International Symposium on Communications, Control and Signal Processing, 2008. p. 1395-1399. </li>
+<li>R. F. Zampolo,D. A. Gomes,R. Seara. Avaliação e Comparação de Métricas de Referência Completa na Caracterização de Limiares de Detecção em 
+Imagens. In: XXVI Simpósio Brasileiro de Telecomunicações, 2008, Rio de Janeiro (RJ). Anais do XXVI Simpósio Brasileiro de Telecomunicações, 2008. </li>
+<h3><b>2007</b></h3>
+<li>L. V. Souza, I. M. Negrão, R. F.  Zampolo,  A. L. S. Castro, J. C. W. A. Costa,  J. R. I. Riu. Impulsive Noise Impact on 
+ADSL2+ Systems. In: Simpósio Brasileiro de Telecomunicações, 2007, Recife (PE). Anais do XXV SBrT, 2007. </li>
+<h3><b>2006</b></h3>
+<li>R. F. Zampolo,  J. R. I. Riu, E. Trojer, B. Dortschy.  Mapping The Impulse Noise Spectral Features From Waveform Domain Onto Symbol 
+Domain. In: 2006 International Telecommunications Symposium - ITS 2006, 2006, Fortaleza (CE), 2006. </li>
+<h3><b>2005</b></h3>
+<li>R. F. Zampolo, R. Seara. A Comparison of Image Quality Metric Performances Under Practical Conditions. IEEE - International Conference 
+on Image Processing 2005, Gênova, Itália, 11-14 de setembro, 2005. </li>
+<li>R. F. Zampolo, R. Seara. Métricas para Avaliação da Qualidade de Imagens. XXII Simpósio Brasileiro de Telecomunicações - SBrT 2005, 
+Campinas (SP), 04-08 de setembro, 2005. </li>
+<li>R. Moraes, A. Klautau, R. F. Zampolo, B. Dortschy. Iterative Water-Filling for Digital Subscriber Lines. XXII Simpósio Brasileiro 
+de Telecomunicações - SBrT 2005, Campinas (SP), 04-08 de setembro, 2005. </li>
+<h3><b>2004</b></h3>
+<li>R. F. Zampolo, R. Seara. Perceptual Image Quality Assessment Based on Bayesian Networks. IEEE - International Conference on Image 
+Processing 2004, Cingapura, 24-27 de outubro, 2004. </li>
+<li>R. F. Zampolo, R. Seara. Considerações Sobre Avaliação de Imagens Restauradas. Congresso Brasileiro de Automática - CBA 2004, Gramado (RS), 
+21-24 de setembro, 2004. </li>
+<li>R. F. Zampolo, R. Seara. Medidas Para Avaliação de Imagens Usando Redes Bayesianas. XXI Simpósio Brasileiro de Telecomunicações - SBrT 2004, 
+Belém (PA), 06-09 de setembro, 2004. </li>
+<h3><b>2003</b></h3>
+<li>R. F. Zampolo, R. Seara. A Measure for Perceptual Image Quality Assessment. IEEE - International Conference on Image 
+Processing 2003, Barcelona, Espanha, 14-17 de setembro, 2003. </li>
+<h3><b>2001</b></h3>
+<li>R. F. Zampolo, R. Seara, O. J. Tobias. Evolutionary Programming in Image Restoration via Reduced Order Model Kalman 
+Filtering. IEEE - International Conference on Image Processing 2001, Tessalônica, Grécia, 7-10 de outubro, 2001. </li>
+<li>R. F. Zampolo, R. Seara, O. J. Tobias. Restauração de Imagens Através de Filtragem de Kalman Usando Programação Evolucionária. 
+19º Simpósio Brasileiro de Telecomunicações - SBrT 2001, Fortaleza (CE), setembro, 2001. </li>
+
+</ul></h5>
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Integrantes do Laboratório ------------------------------------------------------------------------- -->
+<div id="integrantes_a"></div>
+<div class="w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+      <h2><b>Members</b></h2>
+      <h5 class="w3-padding-large w3-justify">
+
+<h3><b>Teachers</b></h3>
+
+<!-- Modelo de Perfil Utilizado ------------------------------------------------------------------------- -->
+
+<div class="w3-section">
+<button class="collapsible w3-large">Ronaldo Zampolo</button>
+<div class="content w3-row-padding w3-white">
+  <div class="w3-third"><img class="w3-image w3-padding-64" src="tech.jpg"></div>
+<div class="w3-twothird"><h4><b>Digital Image Processing</b></h4>
+  	<p>Holds a bachelor's degree in Electrical Engineering from the Federal University of Pará (1995), a master's and a doctorate degree in Electrical Engineering from the Federal University of Santa Catarina (1998 and 2003, respectively) and post-doctorate from Polytech Nantes (2016). Is currently associate professor at the Federal University of Pará, where he develops teaching and research activities. He has experience in the area of ​​digital signal processing, with emphasis on image and video processing, working mainly on the following topics: metrics for visual quality evaluation, image analysis, image restoration, eye tracking systems and visual attention models.<br>
+	<b>E-mail :</b> <ins>zampolo@ieee.org</ins></p>
+		<a href="http://lattes.cnpq.br/9088524620828017" target="_blank"><button>Lattes</button></a></div>
+</div></div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Modelo de Perfil Utilizado ------------------------------------------------------------------------- -->
+
+<div class="w3-section">
+<button class="collapsible w3-large">Francisco Müller</button>
+<div class="content w3-row-padding w3-white">
+  <div class="w3-third"><img class="w3-image w3-padding-64" src="tech.jpg"></div>
+<div class="w3-twothird"><h4><b>Digital Communications, xDSL Systems, Automatic Modulation Classification</b></h4>
+  	<p>Orientation of undergraduate students in research and extension projects.<br>
+	<b>E-mail :</b> <ins>fcfmuller@gmail.com</ins></p>
+		<a href="http://lattes.cnpq.br/4883158238383471" target="_blank"><button>Lattes</button></a></div>
+</div></div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+
+<h3><b>Doctorate Degree Students</b></h3>
+<h3><b>Master Degree Students</b></h3>
+
+<!-- Modelo de Perfil Utilizado ------------------------------------------------------------------------- -->
+
+<div class="w3-section">
+<button class="collapsible w3-large">Luan Gonçalves</button>
+<div class="content w3-row-padding w3-white">
+  <div class="w3-third"><img class="w3-image w3-padding-64" src="profile_luan_goncalves.jpg"></div>
+<div class="w3-twothird"><h4><b>Signal Processing</b></h4>
+  	<p>Graduated in Computer Engineering from the Federal University of Pará (2016). Master's degree in Electrical Engineering by the Graduate Program in Electrical Engineering of the Federal University of Pará (2017) and member of the Laboratory of Signal Processing. He has experience in signal processing with emphasis on image and video processing, acting mainly in image and video coding, evaluation of visual quality, remote sensing and computational vision.<br>
+	<b>E-mail :</b> <ins>luan.goncalves@ieee.org</ins></p>
+		<a href="http://lattes.cnpq.br/6155949500719023" target="_blank"><button>Lattes</button></a></div>
+</div></div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+
+</h5>
+  </div>
+</div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Contato -------------------------------------------------------------------------------------------- -->
+
+<div id="contato_a"></div>
+<div class="w3-row-padding w3-dark-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="">
+      <h2><b>Contact</b></h2>
+      <h5 class="w3-padding-large w3-justify">
+<ul>
+<p>Laboratory of Signal Processing - LaPS:<li>Federal University of Pará</li><li>Augusto Corrêa Street, 01 - Guamá.</li><li>ZIP Code 66075-110. Belém - Pará - Brasil</li><li>+55 91 3201-7674</li></p></ul>
+<p>LaPS is located at the Federal University of Pará, on the 2nd floor of the building attached to LEEC - Laboratory of Electrical Engineering and Computing. LEEC is close to the Professional Sectorial Auditorium.</p>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Mapa ----------------------------------------------------------------------------------------------- -->
+
+<div id="map" class="w3-image" style="width:800px;height:400px;margin-left:auto;margin-right:auto"></div>
+<script>
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(-1.47413964, -48.45172828),
+        zoom: 18,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> </h5>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Scripts (JavaScript) utilizados na página ---------------------------------------------------------- -->
+
+<script>
+// Usado para abrir o menu em telas menores
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script>
+// Usado para o efeito de expansão/colapso dos cards na seção de Integrantes
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+</body>
+</html>
