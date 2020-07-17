@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <title>LaPS - Laboratório de Processamento de Sinais</title>
 <meta charset="UTF-8">
@@ -25,23 +25,20 @@
   <header>
     <div class="logo"> 
         <div class="w3-container w3-display-topleft" style="padding:0px 0px 0px 0px">
-            <a href="index.html"><img class="w3-image" src="logo_sem_fundo_ajustada.png" width="148px"></a>
+          <a href="index.html"><img class="w3-image" src="logo_sem_fundo_ajustada.png" width="148px"></a>
         </div>
     </div>
-    <div class="menuindex">
       <nav>
         <ul class="w3-containe w3-display-topright" style="padding: 0px 0px 0px 0px">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li><a href="linhas_de_pesquisas.html">Linhas de pesquisas</a></li>
           <li><a href="projetos.html">Projetos</a></li>
           <li><a href="integrantes.html">Integrantes</a></li>
           <li><a href="fale_conosco.html">Fale Conosnco</a></li>
         </ul>
       </nav>
-    </div>
       <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
   </header>
-
 <!-- ------------------------------SCRIPT DO MENU-------------------------------------------------------- -->  
   
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -54,41 +51,73 @@
   </script>
 <!-- ---------------------------------------------------------------------------------------------------- -->
 
+
+
 <!-- ---------------------------------------------------------------------------------------------------- -->
-<!-- Sobre o LaPS - Descrição do Laboratório ------------------------------------------------------------ -->
+<!-- Contato -------------------------------------------------------------------------------------------- -->
 
-<div class="w3-container w3-center" style="padding:128px 0px 16px 16px">
-  <img class="w3-image" src="laps_logo.jpg" width="400px"> <!--logo laps -->
-    <h1 class="w3-margin-bottom"><b>Laboratório de Processamento de Sinais</b></h1> <!-- Título -->
-</div>
-
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+<div id="contato_a"></div>
+<div class="w3-row-padding w3-dark-grey w3-padding-64 w3-container">
   <div class="w3-content">
-      <h2><b>Sobre o LaPS</b></h2>
+    <div class="">
+      <h2><b>Contato</b></h2>
       <h5 class="w3-padding-large w3-justify">
-<p>O Laboratório de Processamento de Sinais (LaPS) é associado à Faculdade de Engenharia da Computação e Telecomunicações (FCT) e à Faculdade de Engenharias Elétrica e Biomédica (FEEB) do Instituto de Tecnologia (ITEC) da Universidade Federal do Pará (UFPA). É um espaço acadêmico formado por professores e alunos da Universidade com interesse em desenvolver projetos com tecnologias que beneficiem os estudantes e a comunidade. Os alunos colocam em prática conhecimentos ensinados em sala de aula e desenvolvem suas pesquisas. A tecnologia desenvolvida no LaPS é destinada à comunidade, com o objetivo de melhorar sua qualidade de saúde, cultura, etc.</p>
+<ul>
+<p>Laboratório de Processamento de Sinais - LaPS:<li>Universidade Federal do Pará</li><li>Rua Augusto Corrêa, 01 - Guamá.</li><li>CEP 66075-110. Belém - Pará - Brasil</li><li>+55 (91) 3201-7674</li></p></ul>
+<p>O LaPS é localizado na Universidade Federal do Pará, no 2º piso do prédio anexo ao LEEC - Laboratório de Engenharia Elétrica e Computação. O LEEC fica próximo ao Auditório Setorial Profissional.</p>
 
-<p>O LaPS objetiva exercer atividades de ensino e pesquisa em graduação e pós-graduação e desenvolver projetos e prestar serviços nas áreas relacionadas a processamento de sinais em geral e visão computacional. Além disso, o LaPS busca tornar-se um laboratório de excelência na área de Processamento de Sinais, apoiando órgãos governamentais e empresas privadas com tecnologia de ponta e profissionais qualificados.</p>
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Mapa ----------------------------------------------------------------------------------------------- -->
 
-<p>O Laboratório atende principalmente alunos dos cursos de graduação em Engenharia da Computação, Engenharia Elétrica, Engenharia de Telecomunicações e Engenharia Biomédica.
-</p></h5>
-    <div class="w3-center">
-      <img class="w3-image w3-padding-64" src="laps_home.jpg">
+<div id="map" class="w3-image" style="width:800px;height:400px;margin-left:auto;margin-right:auto"></div>
+<script>
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(-1.47413964, -48.45172828),
+        zoom: 18,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> </h5>
     </div>
-
-<!-- ---------------------------------------------------------------------------------------------------- -->
-<!-- Parceiros ------------------------------------------------------------------------------------------ -->
-
-<div class="w3-container w3-center w3-card w3-white">
-    <h3 class="w3-margin"><b>Parceiros</b></h3>
-	<img class="w3-image w3-margin" src="icon_cnpq.jpg" width="150px">
-	<img class="w3-image w3-margin" src="icon_capes.jpg" width="150px">
-	<img class="w3-image w3-margin" src="icon_senai.jpg" width="150px">
-</div>
-
-<!-- ---------------------------------------------------------------------------------------------------- -->
   </div>
 </div>
 
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Scripts (JavaScript) utilizados na página ---------------------------------------------------------- -->
+
+<script>
+// Usado para abrir o menu em telas menores
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script>
+
+// Usado para o efeito de expansão/colapso dos cards na seção de Integrantes
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
 </body>
 </html>
