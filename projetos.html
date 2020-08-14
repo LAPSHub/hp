@@ -1,0 +1,108 @@
+!DOCTYPE html>
+<html>
+<title>LaPS - Laboratório de Processamento de Sinais</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Links para os códigos CSS -------------------------------------------------------------------------- -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Classes .css W3schools -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> <!-- Importação de Fonte -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!-- Importação de Fonte -->
+
+<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet"> <!-- Importação de Fonte -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Importação de Fonte -->
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<body>
+<!-- Barra de Navegação --------------------------------------------------------------------------------- -->
+
+  <header>
+    <div class="logo"> 
+        <div class="w3-container w3-display-topleft" style="padding:0px 0px 0px 0px">
+            <a href="index.html"><img class="w3-image" src="icons/laps_logo.png" width="148px"></a>
+        </div>
+    </div>
+      <nav>
+        <ul class="w3-containe w3-display-topright" style="padding: 0px 0px 0px 0px">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="linhas_de_pesquisas.html">Linhas de pesquisas</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="fale_conosco.html">Fale Conosnco</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+  </header>
+<!-- ------------------------------SCRIPT DO MENU-------------------------------------------------------- -->  
+  
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('nav').toggleClass('inicio')
+        })
+    })
+  </script>
+<!-- ---------------------------------------------------------------------------------------------------- -->
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Projetos ------------------------------------------------------------------------------------------- -->
+
+<div id="projetos_a"></div>
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+	<div class="w3-content">
+		<div class="">
+			<h2><b>Projetos</b></h2>
+			<h5 class="w3-padding-large w3-justify">
+			<ul>
+				<h3><b>2017</b></h3>
+					<h4><b>Soluções em “Indústria 4.0” aplicadas à Mineração</b></h4>
+						<li><b>Período:</b> junho de 2017 - atual</li>
+						<li><b>Coordenador:</b> Cleidson Ronald Botelho de Souza (ITV-DS)</li>
+						<li><b>Parceiros:</b> Instituto Tecnológico Vale, Instituto SENAI de Inovação</li>
+						<li><b>Financiador:</b> ITV-DS, SENAI-PA, CNPq</li>
+					<h4><b>Uso de modelos de atenção visual na melhoria de desempenho de sistemas de eye/gaze-tracking: aplicações em tecnologia assistiva e crowdsourcing</b></h4>
+						<li><b>Período:</b> agosto de 2017 - atual</li>
+						<li><b>Coordenador:</b> Ronaldo de Freitas Zampolo</li>
+						<li><b>Parceiros:</b> Polytech Nantes</li>
+						<li><b>Financiador:</b> UFPA</li>
+				<h3><b>2015</b></h3>
+					<h4><b>Sistemas de análise de satélite para monitoria de desflorestamento e ocupação humana em áreas de exploração mineral</b></h4>
+						<li><b>Período:</b> janeiro de 2012 a dezembro de 2015</li>
+						<li><b>Coordenador:</b> Evaldo Gonçalves Pelaes</li>
+						<li><b>Financiador:</b> Fundação de Amparo à Pesquisa no Estado do Pará (FAPESPA)</li>
+					<h4><b>Desenvolvimento de um sistema de monitoramento e diagnóstico on-line de descargas parciais nos enrolamentos estatóricos de hidrogeradores</b></h4>
+						<li><b>Período:</b> junho de 2012 a junho de 2015</li>
+						<li><b>Coordenador:</b> Victor Dimitriev</li>
+						<li><b>Parceiros:</b> Eletronorte</li>
+						<li><b>Financiador:</b> Eletronorte</li>
+				<h3><b>2012</b></h3>
+					<h4><b>Implementação de Laboratório de Análise de Marcha de Baixo-Custo para Auxílio na Reabilitação de Crianças Portadoras de Encefalopatia Não-Evolutiva</b></h4>
+						<li><b>Período:</b> agosto de 2008 a março de 2012</li>
+						<li><b>Coordenador:</b> Ronaldo de Freitas Zampolo</li>
+						<li><b>Parceiros:</b> Instituto Pobres Servos da Divina Providência (IPSDP)</li>
+						<li><b>Financiador:</b> Fundação de Amparo à Pesquisa no Estado do Pará (FAPESPA)</li>
+				<h3><b>2008</b></h3>
+					<h4><b>Técnicas avançadas para qualificação de enlace DSL</b></h4>
+						<li><b>Período:</b> novembro de 2006 a outubro de 2008</li>
+						<li><b>Coordenador:</b> João Crisóstomo Weyl Albuquerque Costa</li>
+						<li><b>Financiador:</b> Ericsson</li>
+				<h3><b>2006</b></h3>
+					<h4><b>Desenvolvimento de Modelos para Gerenciamento Dinâmico do Espectro em Serviços de Linha Digital de Assinante</b></h4>
+						<li><b>Período:</b>  novembro de 2004 a outubro de 2006</li>
+						<li><b>Coordenador:</b> Aldebaro Barreto da Rocha Klautau Junior</li>
+						<li><b>Financiador:</b> Ericsson</li>
+			</ul>
+			</h5>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

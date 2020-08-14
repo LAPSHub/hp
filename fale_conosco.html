@@ -1,0 +1,110 @@
+!DOCTYPE html>
+<html>
+<title>LaPS - Laboratório de Processamento de Sinais</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Links para os códigos CSS -------------------------------------------------------------------------- -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Classes .css W3schools -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> <!-- Importação de Fonte -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!-- Importação de Fonte -->
+
+<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet"> <!-- Importação de Fonte -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Importação de Fonte -->
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<body>
+<!-- Barra de Navegação --------------------------------------------------------------------------------- -->
+
+  <header>
+    <div class="logo"> 
+        <div class="w3-container w3-display-topleft" style="padding:0px 0px 0px 0px">
+          <a href="index.html"><img class="w3-image" src="icons/laps_logo.png" width="148px"></a>
+        </div>
+    </div>
+      <nav>
+        <ul class="w3-containe w3-display-topright" style="padding: 0px 0px 0px 0px">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="linhas_de_pesquisas.html">Linhas de pesquisas</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="fale_conosco.html">Fale Conosnco</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+  </header>
+<!-- ------------------------------SCRIPT DO MENU-------------------------------------------------------- -->  
+  
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('nav').toggleClass('inicio')
+        })
+    })
+  </script>
+<!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Contato -------------------------------------------------------------------------------------------- -->
+
+<div id="contato_a"></div>
+<div class="w3-row-padding w3-dark-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="">
+      <h2><b>Contato</b></h2>
+      <h5 class="w3-padding-large w3-justify">
+<ul>
+<p>Laboratório de Processamento de Sinais - LaPS:<li>Universidade Federal do Pará</li><li>Rua Augusto Corrêa, 01 - Guamá.</li><li>CEP 66075-110. Belém - Pará - Brasil</li><li>+55 (91) 3201-7674</li></p></ul>
+<p>O LaPS é localizado na Universidade Federal do Pará, no 2º piso do prédio anexo ao LEEC - Laboratório de Engenharia Elétrica e Computação. O LEEC fica próximo ao Auditório Setorial Profissional.</p>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Mapa ----------------------------------------------------------------------------------------------- -->
+
+<div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1628.11748995404!2d-48.45103923609391!3d-1.4738570463035525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x338a5e59b303591f!2sLaPS%20-%20Laborat%C3%B3rio%20de%20Processamento%20de%20Sinais!5e1!3m2!1spt-BR!2sbr!4v1594914520233!5m2!1spt-BR!2sbr" frameborder="0" style="width:800px;height:400px;margin-left:auto;margin-right:auto" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<!-- Scripts (JavaScript) utilizados na página ---------------------------------------------------------- -->
+
+<script>
+// Usado para abrir o menu em telas menores
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script>
+
+// Usado para o efeito de expansão/colapso dos cards na seção de Integrantes
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+</body>
+</html>

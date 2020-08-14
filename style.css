@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+/* CSS DA BARRA INTEGRANTES*/
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .collapsible:hover {
+    background-color: #555;
+}
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+
+
+/* IMAGENS */
+
+.img1 {
+    position: absolute;
+}
+
+/* MENU */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5 100px;
+    height: 60px;
+    background: #333232;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    float: left;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li{ 
+    list-style: none;
+}
+
+header nav ul li a {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+header nav li a:hover,
+header nav li a.inicio
+{   
+    height: 60px;
+    color: #fff;
+    background: #2196f3;
+}
+
+.menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    header 
+    {
+        padding: 0 20px;
+    }
+    .menu-toggle 
+    {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    header nav.inicio {
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul a {
+        border-bottom: 1px solid rgba(0,0,0.2);
+    }
+
+ }

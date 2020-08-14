@@ -1,0 +1,78 @@
+!DOCTYPE html>
+<html>
+<title>LaPS - Laboratório de Processamento de Sinais</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Links para os códigos CSS -------------------------------------------------------------------------- -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Classes .css W3schools -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> <!-- Importação de Fonte -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!-- Importação de Fonte -->
+
+<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet"> <!-- Importação de Fonte -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Importação de Fonte -->
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+<body>
+<!-- Barra de Navegação --------------------------------------------------------------------------------- -->
+
+  <header>
+    <div class="logo"> 
+        <div class="w3-container w3-display-topleft" style="padding:0px 0px 0px 0px">
+          <a href="index.html"><img class="w3-image" src="icons/laps_logo.png" width="148px"></a>
+        </div>
+    </div>
+      <nav>
+        <ul class="w3-containe w3-display-topright" style="padding: 0px 0px 0px 0px">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="linhas_de_pesquisas.html">Linhas de pesquisas</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="integrantes.html">Integrantes</a></li>
+          <li><a href="fale_conosco.html">Fale Conosnco</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+  </header>
+<!-- ------------------------------SCRIPT DO MENU-------------------------------------------------------- -->  
+  
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('nav').toggleClass('inicio')
+        })
+    })
+  </script>
+<!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+
+
+<!-- Linhas de Pesquisa --------------------------------------------------------------------------------- -->
+
+
+<div id="linhas_pesquisa_a"></div> 
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="">
+      <h2><b>Linhas de Pesquisa</b></h2>
+      <h5 class="w3-padding-large w3-justify">
+<p>O LaPS desenvolve pesquisa em diversos ramos do processamento de sinais, com ênfase recente nas seguintes áreas:</p>
+<p><b>Avaliação de qualidade visual:</b> desenvolvimento e análise de desempenho de métricas de qualidade visual aplicado à imagem e vídeo digitais; 
+desenvolvimento e uso de metodologias para obtenção de dados subjetivos de qualidade visual, avaliação de qualidade visual em imagens médicas.</p>
+<p><b>Análise de imagens:</b> técnicas para análise automática de imagens, inspeção automática de componentes.</p>
+<p><b>Sistemas de eye-tracking:</b> captura de dados de rastreamento ocular, investigação de estratégias para avaliar/melhorar o desempenho de sistemas 
+de eye-tracking, uso de modelos de atenção visual para reduzir etapa de calibração, estrátégias de detecção e rastreamento de pupila, 
+técnicas de estimação de posição de cabeça.</p></h5>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
