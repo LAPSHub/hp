@@ -83,7 +83,7 @@ header nav ul li{
 }
 
 header nav ul li a {
-    height: 60px;
+    height: 14.6vh;
     line-height: 60px;
     padding: 0 20px;
     color: #fff;
@@ -109,6 +109,10 @@ header nav li a.inicio
     display: none;
 }
 
+.w3-twothird p{ /*texto descritivo dos integrantes*/
+    text-align: justify;
+}
+
 @media (max-width: 991px) {
     header 
     {
@@ -122,7 +126,7 @@ header nav li a.inicio
     header nav {
         position: absolute;
         width: 100%;
-        height: calc(100vh - 50px);
+        height: 87.5vh;
         background: #333;
         top: 50px;
         left: -100%;
@@ -136,6 +140,7 @@ header nav li a.inicio
     header nav ul {
         display: block;
         text-align: center;
+        width: 100%;
     }
 
     header nav ul a {
