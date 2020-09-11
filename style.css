@@ -125,10 +125,6 @@ header nav li a.inicio
     display: none;
 }
 
-.w3-twothird p{ /*texto descritivo dos integrantes*/
-    text-align: justify;
-}
-
 @media (max-width: 991px) {
     header 
     {
