@@ -99,7 +99,7 @@ header nav ul li{
 }
 
 header nav ul li a {
-    height: 14.6vh;
+    height: 60px;
     line-height: 60px;
     padding: 0 20px;
     color: #fff;
@@ -124,7 +124,6 @@ header nav li a.inicio
     cursor: pointer;
     display: none;
 }
-
 .w3-twothird p{ /*texto descritivo dos integrantes*/
     text-align: justify;
 }
@@ -142,7 +141,7 @@ header nav li a.inicio
     header nav {
         position: absolute;
         width: 100%;
-        height: 87.5vh;
+        height: calc(100vh - 50px);
         background: #333;
         top: 50px;
         left: -100%;
@@ -156,7 +155,6 @@ header nav li a.inicio
     header nav ul {
         display: block;
         text-align: center;
-        width: 100%;
     }
 
     header nav ul a {
