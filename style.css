@@ -113,6 +113,21 @@ header nav li a.inicio
     text-align: justify;
 }
 
+/*pagina integrantes*/
+
+.button1{
+    background-color: #777; /* Green */
+    border: none;
+    color: white;
+    padding: 1px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    pointer-events: none;
+}
+
 @media (max-width: 991px) {
     header 
     {
