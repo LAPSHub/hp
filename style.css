@@ -1,42 +1,42 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 /* CSS DA BARRA INTEGRANTES*/
 
 .collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
-.active, .collapsible:hover {
-    background-color: #555;
+.active,
+.collapsible:hover {
+  background-color: #555;
 }
 .collapsible:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
 }
 .active:after {
-    content: "\2212";
+  content: '\2212';
 }
 .content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
 
 /* Rodape */
@@ -60,107 +60,119 @@ body {
 /* IMAGENS */
 
 .img1 {
-    position: absolute;
+  position: absolute;
 }
 
 /* MENU */
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 5 100px;
-    height: 60px;
-    background: #333232;
-    width: 100%;
-    box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5 100px;
+  height: 60px;
+  background: #333232;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 header .logo {
-    color: #fff;
-    height: 50px;
-    line-height: 50px;
-    font-size: 30px;
-    float: left;
-    font-weight: bold;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  float: left;
+  font-weight: bold;
 }
 
 header nav {
-    float: right;
+  float: right;
 }
 
 header nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-header nav ul li{ 
-    list-style: none;
+header nav ul li {
+  list-style: none;
 }
 
 header nav ul li a {
-    height: 14.6vh;
-    line-height: 60px;
-    padding: 0 20px;
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    font-size: 15px;
+  height: 14.6vh;
+  line-height: 60px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
 }
 
 header nav li a:hover,
-header nav li a.inicio
-{   
-    height: 60px;
-    color: #fff;
-    background: #2196f3;
+header nav li a.inicio {
+  height: 60px;
+  color: #fff;
+  background: #2196f3;
 }
 
 .menu-toggle {
-    color: #fff;
-    float: right;
-    line-height: 50px;
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
 }
 
-.w3-twothird p{ /*texto descritivo dos integrantes*/
-    text-align: justify;
+.w3-twothird p {
+  /*texto descritivo dos integrantes*/
+  text-align: justify;
+}
+
+/*pagina integrantes*/
+
+.txt-link {
+  text-decoration: none;
+  color: rgb(43, 43, 231);
+}
+
+.txt-link:hover {
+  text-decoration: underline;
+}
+
+#txt-paragrafos {
+  font-size: 14px;
 }
 
 @media (max-width: 991px) {
-    header 
-    {
-        padding: 0 20px;
-    }
-    .menu-toggle 
-    {
-        display: block;
-    }
+  header {
+    padding: 0 20px;
+  }
+  .menu-toggle {
+    display: block;
+  }
 
-    header nav {
-        position: absolute;
-        width: 100%;
-        height: 87.5vh;
-        background: #333;
-        top: 50px;
-        left: -100%;
-        transition: 0.5s;
-    }
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: 87.5vh;
+    background: #333;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+  }
 
-    header nav.inicio {
-        left: 0;
-    }
+  header nav.inicio {
+    left: 0;
+  }
 
-    header nav ul {
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
+  header nav ul {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 
-    header nav ul a {
-        border-bottom: 1px solid rgba(0,0,0.2);
-    }
-
- }
+  header nav ul a {
+    border-bottom: 1px solid rgba(0, 0, 0.2);
+  }
+}
