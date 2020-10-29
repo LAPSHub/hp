@@ -47,19 +47,22 @@ body {
   display: flex;
   font-family: sans-serif;
   justify-content: space-around;
-}
+    }
 
 .art{
     font-size: 11px;
     width: 20.33%;
     text-align: justify;
-}
+    }
 .social{
     width: 30.33%
     text-align: right;
     font-size: 14px;
-    }
-}
+   }
+a:link 
+{ 
+text-decoration:none; 
+} 
 
 /* IMAGENS */
 
