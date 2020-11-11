@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html>
-<title>LaPS - Laboratório de Processamento de Sinais</title>
-<meta charset="UTF-8">
+  <title>LaPS - Laboratório de Processamento de Sinais</title>
+  <meta charset="UTF-8" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!-- Links para os códigos CSS -------------------------------------------------------------------------- -->
-<link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Links para os códigos CSS -------------------------------------------------------------------------- -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Classes .css W3schools -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <!-- Classes .css W3schools -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> <!-- Importação de Fonte -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <!-- Importação de Fonte -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!-- Importação de Fonte -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <!-- Importação de Fonte -->
 
-<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet"> <!-- Importação de Fonte -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Rajdhani"
+    rel="stylesheet"
+  />
+  <!-- Importação de Fonte -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Importação de Fonte -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <!-- Importação de Fonte -->
 
-<!-- ---------------------------------------------------------------------------------------------------- -->
-<body>
-<!-- Barra de Navegação --------------------------------------------------------------------------------- -->
+  <!-- ---------------------------------------------------------------------------------------------------- -->
+  <body>
+    <!-- Barra de Navegação --------------------------------------------------------------------------------- -->
 
-  <header>
-    <div class="logo"> 
-        <div class="w3-container w3-display-topleft" style="padding:0px 0px 0px 0px">
-          <a href="index.html"><img class="w3-image" src="icons/laps_logo.png" width="148px"></a>
+    <header>
+      <div class="logo">
+        <div
+          class="w3-container w3-display-topleft"
+          style="padding: 0px 0px 0px 0px"
+        >
+          <a href="index.html"
+            ><img class="w3-image" src="icons/laps_logo.png" width="148px"
+          /></a>
         </div>
-    </div>
+      </div>
       <nav>
-        <ul class="w3-containe w3-display-topright" style="padding: 0px 0px 0px 0px">
+        <ul
+          class="w3-containe w3-display-topright"
+          style="padding: 0px 0px 0px 0px"
+        >
           <li><a href="index.html">Início</a></li>
           <li><a href="integrantes.html">Integrantes</a></li>
           <li><a href="linhas_de_pesquisas.html">Linhas de Pesquisa</a></li>
@@ -38,73 +60,109 @@
           <li><a href="fale_conosco.html">Contato</a></li>
         </ul>
       </nav>
-      <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
-  </header>
-<!-- ------------------------------SCRIPT DO MENU-------------------------------------------------------- -->  
-  
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-        $('.menu-toggle').click(function(){
-            $('nav').toggleClass('inicio')
-        })
-    })
-  </script>
+      <div class="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </header>
+    <!-- ------------------------------SCRIPT DO MENU-------------------------------------------------------- -->
 
- <script type="text/javascript" src="overmouse.js"></script>
-<!-- ---------------------------------------------------------------------------------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.menu-toggle').click(function () {
+          $('nav').toggleClass('inicio');
+        });
+      });
+    </script>
 
+    <script type="text/javascript" src="overmouse.js"></script>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
 
+    <!-- Linhas de Pesquisa --------------------------------------------------------------------------------- -->
 
+    <div id="linhas_pesquisa_a"></div>
+    <div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+      <div class="w3-content">
+        <div class="">
+          <h2><b>Linhas de Pesquisa</b></h2>
+          <h5 class="w3-padding-large w3-justify">
+            <p>
+              O LaPS desenvolve pesquisa em diversos ramos do processamento de
+              sinais, com ênfase nas seguintes áreas:
+            </p>
 
-<!-- Linhas de Pesquisa --------------------------------------------------------------------------------- -->
+            <p>
+              Sistemas de comunicação 5G e além: modelagem de canal de
+              propagação em ondas milimétricas utilizando traçado de raios
+              (ray-tracing), arquiteturas híbridas para separação espacial de
+              usuários (hybrid-beamforming) para sistemas MIMO
+              (múltiplas-entradas, múltiplas-saídas), técnicas de comunicação
+              para sistemas MIMO massivos.
+            </p>
 
+            <p>
+              Análise de sinais bioelétricos em estados normais e alterados
+              (epilepsia, autismos, TDAH): eletroencefalograma, eletromiograma,
+              eletrocardiograma. Sistemas de Neurofeedback e Neuroengenharia
+            </p>
 
-<div id="linhas_pesquisa_a"></div> 
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="">
-      <h2><b>Linhas de Pesquisa</b></h2>
-      <h5 class="w3-padding-large w3-justify">
-        <p>O LaPS desenvolve pesquisa em diversos ramos do processamento de sinais, com ênfase nas seguintes áreas:</p>
-        
-        <p>Sistemas de comunicação 5G e além: modelagem de canal de propagação em ondas milimétricas utilizando 
-        traçado de raios (ray-tracing), arquiteturas híbridas para separação espacial de usuários (hybrid-beamforming) 
-        para sistemas MIMO (múltiplas-entradas, múltiplas-saídas), técnicas de comunicação para sistemas MIMO massivos.</p>
-
-        <p>Análise de sinais bioelétricos em estados normais e alterados (epilepsia, autismos, TDAH): eletroencefalograma, 
-          eletromiograma, eletrocardiograma. Sistemas de Neurofeedback e Neuroengenharia
-        </p>
-
-        <p>Processamento de imagem/visão computacional: avaliação de qualidade visual, reconhecimento de atividades humanas, 
-          inspeção automática de componentes, sistemas de eye-tracking e modelos de atenção visual.
-        </p>
-      </h5>
+            <p>
+              Processamento de imagem/visão computacional: avaliação de
+              qualidade visual, reconhecimento de atividades humanas, inspeção
+              automática de componentes, sistemas de eye-tracking e modelos de
+              atenção visual.
+            </p>
+          </h5>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  </body>
 
-</body>
-
-<!-- ----------------------RODAPÉ------------------------------------------------------------------------- --> 
+  <!-- ----------------------RODAPÉ------------------------------------------------------------------------- -->
   <footer class="footer">
     <article class="art">
-      <img src="icons/laps_logo.png" width="180px">
-      <p>O Laboratório de Processamento de Sinais (LaPS) é associado à Faculdade de Engenharia da Computação e Telecomunicações (FCT) e à Faculdade de Engenharias Elétrica e Biomédica (FEEB) do Instituto de Tecnologia (ITEC) da Universidade Federal do Pará (UFPA).</p>
-    </article>            
-    
+      <img src="icons/laps_logo.png" width="180px" />
+      <p>
+        O Laboratório de Processamento de Sinais (LaPS) é associado à Faculdade
+        de Engenharia da Computação e Telecomunicações (FCT) e à Faculdade de
+        Engenharias Elétrica e Biomédica (FEEB) do Instituto de Tecnologia
+        (ITEC) da Universidade Federal do Pará (UFPA).
+      </p>
+    </article>
+
     <article class="art">
-      <a href="https://portal.ufpa.br/" target="_blank"><img width="130px" src="icons/icon_UFPA.png"onmouseover = "Tip('UFPA')"; onmouseout = "UnTip()";></a>
-    </article>  
-    
+      <a href="https://portal.ufpa.br/" target="_blank"
+        ><img
+          width="130px"
+          src="icons/icon_UFPA.png"
+          onmouseover="Tip('UFPA')"
+          ;
+          onmouseout="UnTip()"
+          ;
+      /></a>
+    </article>
+
     <aside class="social">
-     <a href="fale_conosco.html" onmouseover = "Tip('Mais informações')"; onmouseout = "UnTip()";>
-     <h2>Contato</h2></a>
-     <p>laps@ufpa.com.br</p>
+      <a
+        href="fale_conosco.html"
+        onmouseover="Tip('Mais informações')"
+        ;
+        onmouseout="UnTip()"
+        ;
+      >
+        <h2>Contato</h2></a
+      >
+      <p>laps@ufpa.com.br</p>
       <p>+55 (91) 3201-7674</p>
-      <p><a href="https://www.facebook.com/lapsufpa/" target="_blank"><img width="25px" src="icons/icon_facebook.png"></a>
-           <img width="10px" src="icons/space.png">
-      <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="icons/icon_Instagram.png" width="25px"></a></p>
+      <p>
+        <a href="https://www.facebook.com/lapsufpa/" target="_blank"
+          ><img width="25px" src="icons/icon_facebook.png"
+        /></a>
+        <img width="10px" src="icons/space.png" />
+        <a href="https://www.instagram.com/?hl=pt-br" target="_blank"
+          ><img src="icons/icon_Instagram.png" width="25px"
+        /></a>
+      </p>
     </aside>
   </footer>
-  </html>
+</html>
